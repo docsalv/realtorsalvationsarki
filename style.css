@@ -200,7 +200,7 @@ nav ul li a:hover::after{
 .intro{
     padding:45px 6% 25px;
     text-align:center;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .intro h2{
@@ -934,7 +934,7 @@ nav{
 
 .hero h1{
 
-    font-size:40px;
+    font-size:25px;
 
 }
 
@@ -1002,7 +1002,7 @@ nav ul{
 
 .hero h1{
 
-    font-size:30px;
+    font-size:20px;
 
 }
 
@@ -1021,6 +1021,7 @@ nav ul{
 .intro{
 
     padding:35px 20px 20px;
+    margin-top: 20px;
     
 
 }
@@ -1028,7 +1029,7 @@ nav ul{
 .intro h2{
 
     font-size:20px;
-    margin-top: 20px;
+    margin-top: 150px;
 
 }
 
