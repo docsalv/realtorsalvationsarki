@@ -199,6 +199,7 @@ nav ul li a:hover::after{
 .intro{
     padding:45px 6% 25px;
     text-align:center;
+    margin-top: 50px;
 }
 
 .intro h2{
@@ -856,12 +857,14 @@ nav ul{
 .intro{
 
     padding:35px 20px 20px;
+    
 
 }
 
 .intro h2{
 
-    font-size:26px;
+    font-size:20px;
+    margin-top: 150px;
 
 }
 
