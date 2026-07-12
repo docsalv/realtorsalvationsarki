@@ -920,7 +920,7 @@ footer small{
     position:fixed;
     bottom:25px;
     right:25px;
-    background:#25D366;
+    background:#001809;
     color:#fff;
     text-decoration:none;
     display:flex;
@@ -947,13 +947,15 @@ footer small{
 }
 
 .whatsapp-text small{
-    font-size:11px;
+    font-size:12px;
     opacity:.9;
 }
 
 .whatsapp-text span{
-    font-size:15px;
-    font-weight:600;
+    font-size:14px;
+    font-weight:700;
+    color: #ffffff;
+    padding: 3px;
 }
 
 .whatsapp-btn i{
