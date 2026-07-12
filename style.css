@@ -914,6 +914,86 @@ footer small{
 
 }
 
+
+
+.whatsapp-btn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:12px 18px;
+    border-radius:50px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    z-index:999;
+    animation:pulse 2s infinite;
+    transition:.3s;
+    font-family:Arial, sans-serif;
+}
+
+.whatsapp-btn:hover{
+    transform:translateY(-3px);
+    background:#1ebe5d;
+}
+
+.whatsapp-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1.2;
+}
+
+.whatsapp-text small{
+    font-size:11px;
+    opacity:.9;
+}
+
+.whatsapp-text span{
+    font-size:15px;
+    font-weight:600;
+}
+
+.whatsapp-btn i{
+    font-size:34px;
+}
+
+/* Mobile */
+@media(max-width:600px){
+
+    .whatsapp-btn{
+        bottom:20px;
+        right:15px;
+        padding:10px 15px;
+    }
+
+    .whatsapp-text small{
+        font-size:10px;
+    }
+
+    .whatsapp-text span{
+        font-size:13px;
+    }
+
+    .whatsapp-btn i{
+        font-size:30px;
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse{
+    0%{
+        box-shadow:0 0 0 0 rgba(37,211,102,.6);
+    }
+    70%{
+        box-shadow:0 0 0 18px rgba(37,211,102,0);
+    }
+    100%{
+        box-shadow:0 0 0 0 rgba(37,211,102,0);
+    }
+}
 /*==================================================
                 RESPONSIVE
 ==================================================*/
