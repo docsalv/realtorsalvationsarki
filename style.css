@@ -722,7 +722,7 @@ iframe{
 
 .profile-slider{
     position:relative;
-    width:220px;
+    width:min(90vw, 420px);
     height:280px;
     overflow-x:auto;
     overflow-y:hidden;
@@ -734,6 +734,15 @@ iframe{
     background:rgba(255,255,255,.05);
     backdrop-filter:blur(12px);
     box-shadow:0 12px 25px rgba(0,0,0,.35);
+}
+
+.profile-track img{
+    width:calc(min(90vw, 420px) - 10px);
+    height:270px;
+    object-fit:cover;
+    border-radius:14px;
+    flex-shrink:0;
+    scroll-snap-align:center;
 }
 
 .profile-slider::-webkit-scrollbar{
@@ -776,14 +785,14 @@ iframe{
     gap:6px;
 }
 
-.profile-track img{
+/* .profile-track img{
     width:210px;
     height:270px;
     object-fit:cover;
     border-radius:14px;
     flex-shrink:0;
     scroll-snap-align:center;
-}
+} */
 
 .shine{
     position:absolute;
@@ -866,6 +875,8 @@ iframe{
         transform:translateY(0);
     }
 }
+
+
 
 .connect-card{
     display:flex;
