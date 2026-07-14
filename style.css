@@ -313,11 +313,11 @@ nav ul li a:hover::after{
 
 .features div{
     background:#123154;
-    padding:12px 14px;
+    padding:8px 12px;
     border-radius:10px;
     border:1px solid rgba(255,255,255,.05);
     transition:.3s;
-    font-size:14px;
+    font-size:10px;
 }
 
 .features div:hover{
