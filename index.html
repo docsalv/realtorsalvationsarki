@@ -437,6 +437,103 @@ downloadable documents, recommendation and investment details.
 
     </footer>
 
+ <script>
+
+const cards = document.querySelectorAll(".property-card");
+
+cards.forEach((card,index)=>{
+    if(index > 1){
+        card.style.display = "none";
+    }
+});
+
+const button = document.createElement("button");
+button.className = "show-more-btn";
+
+button.innerHTML = `
+    Continue Viewing Properties
+    <span class="changing-text">Estate Lands</span>
+`;
+
+document.getElementById("properties").after(button);
+
+let expanded = false;
+
+button.addEventListener("click",()=>{
+
+    expanded = !expanded;
+
+    cards.forEach((card,index)=>{
+        if(index > 1){
+            card.style.display = expanded ? "grid" : "none";
+        }
+    });
+
+    if(expanded){
+        button.innerHTML = `
+            ▲ Show Less
+        `;
+    }else{
+        button.innerHTML = `
+            Continue Viewing
+            <span class="changing-text">Estate Lands</span>
+        `;
+        startTextRotation();
+    }
+
+});
+
+const phrases = [
+    {text:"Estate Lands",color:"#10B981"},
+    {text:"Houses",color:"#2563EB"},
+    {text:"Prime Locations",color:"#EF4444"},
+    {text:"Investment Deals",color:"#8B5CF6"},
+    {text:"Land Banking",color:"#F59E0B"},
+    {text:"Abuja Opportunities",color:"#06B6D4"}
+];
+
+let currentPhrase = 0;
+let rotation;
+
+function startTextRotation(){
+
+    clearInterval(rotation);
+
+    rotation = setInterval(()=>{
+
+        const changingText =
+        document.querySelector(".changing-text");
+
+        if(!changingText) return;
+
+        changingText.style.opacity = "0";
+        changingText.style.transform = "translateY(8px)";
+
+        setTimeout(()=>{
+
+            currentPhrase =
+            (currentPhrase + 1) % phrases.length;
+
+            changingText.textContent =
+            phrases[currentPhrase].text;
+
+            changingText.style.color =
+            phrases[currentPhrase].color;
+
+            changingText.style.opacity = "1";
+            changingText.style.transform =
+            "translateY(0)";
+
+        },250);
+
+    },2200);
+
+}
+
+startTextRotation();
+
+</script>
+
 </body>
 
 </html>
