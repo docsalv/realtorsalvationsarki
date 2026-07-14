@@ -63,28 +63,58 @@
 
         <!-- <span>Luxury Investment Opportunities</span> -->
 
-        <h1 style="color: blanchedalmond;">
+        <h1 style="color: blanchedalmond; font-size: medium;">
           Your Next  
             
            High-Value  Property is here</h1>
        
 
         <!-- Realtor Profile -->
-       <div class="realtor-profile">
+     <div class="realtor-profile">
 
-    <div class="profile-frame">
+    <div class="profile-slider">
 
-        <img src="images/realtorsalvation.jpeg" alt="Realtor Salvation Sarki">
+        <div class="shine"></div>
+
+        <div class="profile-track">
+            <img src="images/realtorsalvation.jpeg" alt="Realtor Salvation Sarki">
+            <img src="images/housesale.jpeg" alt="Realtor Salvation Sarki">
+            <img src="images/houseoffplan.jpeg" alt="Realtor Salvation Sarki">
+            <img src="images/estateland.jpeg" alt="Realtor Salvation Sarki">
+        </div>
 
     </div>
 
-    <h3 style="color: bisque;">Realtor Salvation Sarki</h3>
+    <h3>Realtor Salvation Sarki</h3>
 
-    <p style="font-size: 10px;">Your trusted real estate partner. Let's find your next property with confidence.</p>
+    <p>
+        Your trusted real estate partner.<br>
+        Helping you secure premium properties with confidence.
+    </p>
 
 </div>
 
-    </div>
+<script>
+const slider = document.querySelector(".profile-slider");
+
+setInterval(() => {
+
+    const width = slider.clientWidth;
+
+    if (slider.scrollLeft + width >= slider.scrollWidth - 5) {
+        slider.scrollTo({
+            left: 0,
+            behavior: "smooth"
+        });
+    } else {
+        slider.scrollBy({
+            left: width,
+            behavior: "smooth"
+        });
+    }
+
+}, 3500);
+</script>
 
 </section>
 
@@ -93,17 +123,20 @@
 
     <!--================ INTRO ================-->
 
-    <section class="intro" style="margin-top: -50px;
-">
+    <section class="intro">
 
-        <h2>Explore Your Next Property</h2>
+<h2 class="explore-title">
+    Explore Your Next Property
+    <span class="down-arrow">↓</span>
+</h2>
+      <p>
+Click on any property to view its flyer, site video,
+downloadable documents, recommendation and investment details.
+</p>
 
-        <p>
-
-            Click on any property to view its flyer, site video,
-            downloadable documents, recommendation and investment details; <p style="background-color: rgb(117, 86, 0);">in one place.</p> 
-
-        </p>
+<div class="intro-highlight">
+    In one place.
+</div>
 
     </section>
 
@@ -386,39 +419,41 @@
 
     <!--================ CTA ================-->
 
-    <section class="cta">
+    <section class="connect-card">
 
-        <h2>
+    <div class="connect-box">
+        <span class="corner tl"></span>
+<span class="corner tr"></span>
+<span class="corner bl"></span>
+<span class="corner br"></span>
 
-            Ready To Invest?
-
-        </h2>
+        <h2>I'm Always Open to Connect</h2>
 
         <p>
+            Whether you're looking for a house, estate land, commercial property,
+            or simply planning for the future, I'm here to help.
 
-            Let's discuss the best investment option that suits your
-            budget and financial goals.
+            Ask your questions, explore investment opportunities, and let's discuss
+            the right property for your goals anywhere within Abuja.
 
+            I'll be glad to guide you—today, tomorrow, or whenever you're ready.
         </p>
 
-        <div class="cta-buttons">
+        <div class="connect-buttons">
 
-            <a href="https://wa.me/2348145972225"
-                target="_blank">
-
-                WhatsApp Me
-
+            <a href="https://wa.me/2348145972225" target="_blank">
+                💬 Drop Me a Message
             </a>
 
             <a href="tel:+2348145972225">
-
-                Call Me
-
+                📞 Call Me Directly
             </a>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
 
