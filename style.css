@@ -294,11 +294,22 @@ nav ul li a:hover::after{
 }
 
 .property-content p{
-    color:#d9d9d9;
-    font-size:15px;
-    line-height:1.7;
-    margin-bottom:20px;
+    text-align: justify;
+    line-height: 1.5;
+    color: #f2efef;
+    margin-bottom: 15px;
+    text-justify: inter-word;
+    font-size: 14px;
 }
+
+@media (max-width: 768px){
+    .property-content p{
+        text-align: justify;
+        text-align-last: left;
+    }
+}
+
+
 
 /*==================================================
                 FEATURES
