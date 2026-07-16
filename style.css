@@ -311,6 +311,8 @@ nav ul li a:hover::after{
 
 
 
+
+
 /*==================================================
                 FEATURES
 ==================================================*/
@@ -1290,6 +1292,62 @@ footer small{
         min-width:140px;
     }
 
+}
+
+
+
+
+.flyer-actions{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+
+.flyer-btn{
+    flex:1;
+    text-align:center;
+    padding:14px 12px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:all 0.3s ease;
+    box-sizing:border-box;
+}
+
+/* View Button */
+.view-flyer{
+    background:#3278aa;
+    color:#fff;
+    border:2px solid #10344D;
+}
+
+.view-flyer:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 15px rgba(16,52,77,0.25);
+}
+
+/* Download Button */
+.download-flyer{
+    background:#ffdd6d;
+    color:#000;
+    border:2px solid #D4AF37;
+}
+
+.download-flyer:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 15px rgba(212,175,55,0.25);
+}
+
+/* Mobile */
+@media (max-width:480px){
+    .flyer-actions{
+        gap:8px;
+    }
+
+    .flyer-btn{
+        padding:12px 8px;
+        font-size:14px;
+    }
 }
 /*==================================================
                 RESPONSIVE
