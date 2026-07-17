@@ -203,7 +203,7 @@ nav ul li a:hover::after{
     padding:45px 6% 25px;
     text-align:center;
 
-       margin-top:120px;
+       margin-top:50px;
     padding-top:0;
     color: whitesmoke;
 }
@@ -1241,8 +1241,8 @@ footer small{
     margin:30px auto 50px;
     padding:16px 34px;
 
-    background:#ffffff;
-    color:#10344D;
+    background:linear-gradient(135deg,#eaecee,#a9d8f6);
+    color:#030b20;
 
     border:none;
     border-radius:50px;
@@ -1253,10 +1253,42 @@ footer small{
 
     cursor:pointer;
 
-    box-shadow:
-        0 8px 20px rgba(0,0,0,.12);
+    box-shadow:0 8px 20px rgba(16,52,77,.25);
 
     transition:.35s ease;
+
+    animation:pulseGlow 1.8s infinite;
+}
+
+.show-more-btn:hover{
+    transform:translateY(-4px) scale(1.03);
+    animation:none;
+    box-shadow:
+        0 12px 30px rgba(16,52,77,.35),
+        0 0 20px rgba(200,170,98,.4);
+}
+
+@keyframes pulseGlow{
+    0%{
+        transform:scale(1);
+        box-shadow:
+            0 8px 20px rgba(16,52,77,.20),
+            0 0 0 rgba(200,170,98,0);
+    }
+
+    50%{
+        transform:scale(1.06);
+        box-shadow:
+            0 12px 28px rgba(16,52,77,.35),
+            0 0 25px rgba(0, 0, 0, 0.7);
+    }
+
+    100%{
+        transform:scale(1);
+        box-shadow:
+            0 8px 20px rgba(16,52,77,.20),
+            0 0 0 rgba(200,170,98,0);
+    }
 }
 
 .show-more-btn:hover{
