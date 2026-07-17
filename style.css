@@ -203,13 +203,14 @@ nav ul li a:hover::after{
     padding:45px 6% 25px;
     text-align:center;
 
-       margin-top:20px;
+       margin-top:120px;
     padding-top:0;
+    color: whitesmoke;
 }
 
 .intro h2{
     font-size:30px;
-    color:#d4af37;
+    color:#ffffff;
     margin-bottom:12px;
     font-weight:700;
 }
@@ -1413,6 +1414,7 @@ nav{
     flex-direction:column;
     gap:10px;
     padding:12px;
+    background-color: #000c25;
 }
 
 nav ul{
@@ -1454,13 +1456,13 @@ nav ul{
 }
 
 .intro{
-    padding:20px;
-    margin-top:0;
+    padding:10px;
+    margin-top:20px;
 }
 
 .intro h2{
-    font-size:20px;
-    margin-top:0;
+    font-size:15px;
+    margin-bottom: 10px;
 }
 
 .property-card{
@@ -1498,6 +1500,7 @@ nav ul li a{
     font-size:13px;
 
 }
+
 
 .hero{
 
